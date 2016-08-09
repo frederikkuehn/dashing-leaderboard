@@ -1,9 +1,41 @@
-<ul>
-  <li class="leaderboard" data-foreach-standing="standings">
-    <span data-bind="standing.rank"></span>
-    <span data-bind="standing.player"></span>
-    <span data-bind="standing.wins"></span>
-    <span data-bind="standing.losses"></span>
-    <span data-bind="standing.elo"></span>
-  </li>
-</ul>
+<table>
+  <thead>
+   <tr>
+      <th>
+        <span>Rank</span>
+      </th>
+      <th>
+        <span>Name</span>
+      </th>
+      <th>
+        <span>W</span>
+      </th>
+      <th>
+        <span>L</span>
+      </th>
+      <th>
+        <span>Elo</span>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr data-foreach-standing="standings">
+      <td>
+        <span data-bind="standing.rank"></span>
+      </td>
+      <td>
+        <span data-bind="standing.player"></span>
+      </td>
+      <td>
+        <span data-bind="standing.wins"></span>
+      </td>
+      <td>
+        <span data-bind="standing.losses"></span>
+      </td>
+      <td>
+        <span data-bind="standing.elo"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>

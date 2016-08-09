@@ -10,7 +10,7 @@ To use this widget, copy `slack_gamebot_leaderboard.html`, `slack_gamebot_leader
 ## Dashboard configuration
 To include the widget in a dashboard, add the following snippet to the dashboard layout file:
 ```html
-<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
   <div data-id="gamebot-leaderboard" data-view="SlackGamebotLeaderboard"></div>
 </li>
 ```
